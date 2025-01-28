@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Header Css */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2e8b57;
+    padding: 10px 20px;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+
+.navbar .logo img {
+    width: auto;
+    height: 40px;
+}
+
+.nav-menu {
+    list-style-type: none;
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-menu li {
+    margin: 0 15px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover {
+    color: #f0a500;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar {
+        padding: 10px 10px;
+    }
+
+    .nav-menu {
+        margin-left: 0;
+    }
+
+    .nav-menu li {
+        margin: 0 10px;
+    }
+
+    .nav-menu a {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .navbar .logo img {
+        height: 35px;
+    }
+
+    .nav-menu a {
+        font-size: 12px;
+    }
+
+    .nav-menu li {
+        margin: 0 8px;
+    }
+}
+
+/* Welcome Section */
+.welcome-section {
+    background-color: #f4f4f4;
+    padding: 50px 0;
+    text-align: center;
+}
+
+.welcome-section h1 {
+    font-size: 36px;
+}
+
+.welcome-section p {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+/* Recycling Center Search Section */
+.search-section {
+    padding: 40px 0;
+    background-color: #e9f7f1;
+    text-align: center;
+}
+
+.search-section h2 {
+    font-size: 28px;
+}
+
+.search-form input {
+    padding: 10px;
+    width: 300px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+.search-form button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+/* Educational Content Section */
+.education-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
+.education-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.content-boxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.content-box {
+    background-color: #f4f4f4;
+    padding: 20px;
+    width: 30%;
+    border-radius: 5px;
+}
+
+.content-box h3 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.content-box a {
+    color: #2e8b57;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.content-box a:hover {
+    color: #f0a500;
+}
+
+/* Calendar of Events Section */
+.events-section {
+    padding: 50px 0;
+    background-color: #e9f7f1;
+    text-align: center;
+}
+
+.events-section h2 {
+    font-size: 28px;
+    margin-bottom: 40px;
+}
+
+.events-list {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.event-item {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.event-item h3 {
+    font-size: 24px;
+}
+
+.event-item p {
+    font-size: 16px;
+}
+
+.event-item i {
+    margin-right: 10px;
+}
+
+
+/* Footer Css */
+.footer {
+    background-color: #2e8b57;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer .footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.footer .contact-info,
+.footer .social-media {
+    flex: 1;
+    min-width: 250px;
+}
+
+.footer h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer ul {
+    list-style-type: none;
+}
+
+.footer ul li {
+    margin-bottom: 8px;
+}
+
+.footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer ul li a:hover {
+    color: #f0a500;
+}
+
+
+.footer .social-media ul li a i {
+    margin-right: 8px;
+    font-size: 18px;
+}
+
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 14px;
+    border-top: 1px solid #555;
+    padding-top: 10px;
+}
