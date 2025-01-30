@@ -209,6 +209,15 @@ body {
     margin-right: 10px;
 }
 
+.event-item button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #2e8b57;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
 
 /* Footer Css */
 .footer {
