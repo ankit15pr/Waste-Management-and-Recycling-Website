@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Environmental Impact Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="../Images/logo.png" alt="Logo" />
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../Events/event.html">Events</a></li>
+                <li><a href="calculator.html">Impact Calculator</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section>
+            <h2>Calculate Your Recycling Impact</h2>
+            <form id="impact-form">
+                <label for="paper">Amount of Paper Recycled (in kg):</label>
+                <input type="number" id="paper" name="paper" min="0" value="0" required><br>
+
+                <label for="plastic">Amount of Plastic Recycled (in kg):</label>
+                <input type="number" id="plastic" name="plastic" min="0" value="0" required><br>
+
+                <label for="glass">Amount of Glass Recycled (in kg):</label>
+                <input type="number" id="glass" name="glass" min="0" value="0" required><br>
+
+                <label for="aluminum">Amount of Aluminum Recycled (in kg):</label>
+                <input type="number" id="aluminum" name="aluminum" min="0" value="0" required><br>
+
+                <button type="submit">Calculate Impact</button>
+            </form>
+        </section>
+
+        <section id="results" style="display:none;">
+            <h2>Your Environmental Impact</h2>
+            <p><strong>CO2 Saved: </strong><span id="co2"></span> kg</p>
+            <p><strong>Water Saved: </strong><span id="water"></span> gallons</p>
+            <p><strong>Energy Saved: </strong><span id="energy"></span> kWh</p>
+        </section>
+
+        <section id="chart" style="display:none;">
+            <h3>Impact Breakdown (in %)</h3>
+            <canvas id="impactChart"></canvas>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="calculator.js"></script>
+</body>
+
+</html>

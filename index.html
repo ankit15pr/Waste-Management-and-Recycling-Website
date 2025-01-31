@@ -8,7 +8,7 @@
     <!-- Main css -->
     <link rel="stylesheet" href="style.css">
     <!-- Reaminder popup css -->
-     <link rel="stylesheet" href="remainder.css">
+    <link rel="stylesheet" href="remainder.css">
     <!-- Link to FontAwesome for social media icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
     <!-- Link to Leaflet CSS -->
@@ -25,7 +25,7 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="#search">Search</a></li>
                 <li><a href="Events/event.html">Events</a></li>
-                <li><a href="#profile">Profile</a></li>
+                <li><a href="Impact Calculator/calculator.html">Impact Calculator</a></li>
             </ul>
         </nav>
     </header>
@@ -50,7 +50,19 @@
                 <button type="submit">Search</button>
             </form>
             <!-- Map Section -->
-             <div id="map"></div>
+            <div id="map"></div>
+        </div>
+    </section>
+
+    <!-- Environmental Impact Calculator Section -->
+    <section class="impact-calculator-section" id="calculator">
+        <div class="container">
+            <h2>Calculate Your Environmental Impact</h2>
+            <p>Our Environmental Impact Calculator allows you to see the direct impact of your recycling habits.
+                Discover how much energy, water, and CO2 emissions you can save by recycling more!</p>
+            <p>Take the first step in understanding how your actions can make a positive difference for the environment.
+            </p>
+            <a href="Impact Calculator/calculator.html" class="btn-primary">Try the Calculator</a>
         </div>
     </section>
 
@@ -87,31 +99,31 @@
             <h2>Upcoming Recycling Events</h2>
             <div class="events-list">
                 <!-- Event 1 -->
-            <div class="event-item">
-                <h3>Recycling Collection</h3>
-                <p><i class="fas fa-calendar-day"></i> Monday, February 3, 2025 | 9:00 AM - 10:00 AM</p>
-                <p>Collection of plastics and paper. Help us recycle more!</p>
-                <br>
-                <button onclick="window.location.href='Events/event.html'">View Event</button>
-            </div>
-            
-            <!-- Event 2 -->
-            <div class="event-item">
-                <h3>Recycling Collection</h3>
-                <p><i class="fas fa-calendar-day"></i> Tuesday, February 11, 2025 | 9:00 AM - 10:00 AM</p>
-                <p>Collection of glass and metals. Recycle the right materials.</p>
-                <br>
-                <button onclick="window.location.href='Events/event.html'">View Event</button>
-            </div>
-            
-            <!-- Event 3 -->
-            <div class="event-item">
-                <h3>Recycling Collection</h3>
-                <p><i class="fas fa-calendar-day"></i> Monday, February 17, 2025 | 9:00 AM - 10:00 AM</p>
-                <p>Collection of organics. Let's keep our environment clean!</p>
-                <br>
-                <button onclick="window.location.href='Events/event.html'">View Event</button>
-            </div>
+                <div class="event-item">
+                    <h3>Recycling Collection</h3>
+                    <p><i class="fas fa-calendar-day"></i> Monday, February 3, 2025 | 9:00 AM - 10:00 AM</p>
+                    <p>Collection of plastics and paper. Help us recycle more!</p>
+                    <br>
+                    <button onclick="window.location.href='Events/event.html'">View Event</button>
+                </div>
+
+                <!-- Event 2 -->
+                <div class="event-item">
+                    <h3>Recycling Collection</h3>
+                    <p><i class="fas fa-calendar-day"></i> Tuesday, February 11, 2025 | 9:00 AM - 10:00 AM</p>
+                    <p>Collection of glass and metals. Recycle the right materials.</p>
+                    <br>
+                    <button onclick="window.location.href='Events/event.html'">View Event</button>
+                </div>
+
+                <!-- Event 3 -->
+                <div class="event-item">
+                    <h3>Recycling Collection</h3>
+                    <p><i class="fas fa-calendar-day"></i> Monday, February 17, 2025 | 9:00 AM - 10:00 AM</p>
+                    <p>Collection of organics. Let's keep our environment clean!</p>
+                    <br>
+                    <button onclick="window.location.href='Events/event.html'">View Event</button>
+                </div>
             </div>
         </div>
     </section>
